@@ -1,0 +1,34 @@
+name: Update EPG
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Grab Macedonian guide (maxtvgo.mk)
+        continue-on-error: true
+        run: |
+          git clone --depth 1 https://github.com/iptv-org/epg.git iptv-epg
+          cd iptv-epg
+          npm install
+          npm run grab --- --channels=../mk.channels.xml --output=../mk.xml --days=3 --maxConnections=2
+      - name: Build merged EPG
+        run: python3 build_epg.py
+      - name: Publish to epg branch
+        run: |
+          cd public
+          git init -q -b epg
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add epg.xml.gz
+          git commit -qm "EPG $(date -u +%F)"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" epg
