@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="MRT1.mk" site_id="105">MRT 1</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="MRT2.mk" site_id="57">MRT 2</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="MRT3.mk" site_id="3301185">MRT 3</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="MRT4.mk" site_id="3197876">MRT 4</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="MRT5.mk" site_id="3197879">MRT 5</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="Sitel.mk" site_id="13">Sitel</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="Kanal5.mk" site_id="22">Kanal 5</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="AlfaTV.mk" site_id="28">Alfa TV</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="TV24.mk" site_id="29">TV 24 Vesti</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="TelmaTV.mk" site_id="36">Telma</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="TVSonce.mk" site_id="40">TV Sonce</channel>
-  <channel site="maxtvgo.mk" lang="mk" xmltv_id="NasaTV.mk" site_id="54">Nasa TV</channel>
+  <channel site="neo.io" lang="mk" xmltv_id="MRT1.mk" site_id="mtv-1">MRT 1</channel>
+  <channel site="neo.io" lang="mk" xmltv_id="MRT2.mk" site_id="mtv-2">MRT 2</channel>
+  <channel site="neo.io" lang="mk" xmltv_id="MRT3.mk" site_id="mtv-3">MRT 3</channel>
+  <channel site="neo.io" lang="mk" xmltv_id="Sitel.mk" site_id="tv-sitel">Sitel</channel>
+  <channel site="neo.io" lang="mk" xmltv_id="NasaTV.mk" site_id="nasa-tv">Nasa TV</channel>
+  <channel site="neo.io" lang="mk" xmltv_id="TVSonce.mk" site_id="sonce-tv">TV Sonce</channel>
 </channels>
