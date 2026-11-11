@@ -6,4 +6,18 @@
   <channel site="neo.io" lang="mk" xmltv_id="Sitel.mk" site_id="tv-sitel">Sitel</channel>
   <channel site="neo.io" lang="mk" xmltv_id="NasaTV.mk" site_id="nasa-tv">Nasa TV</channel>
   <channel site="neo.io" lang="mk" xmltv_id="TVSonce.mk" site_id="sonce-tv">TV Sonce</channel>
+  <channel site="tv-spored.siol.net" lang="sl" xmltv_id="TVSonce2.mk" site_id="soncetv">TV Sonce</channel>
+  <channel site="neo.io" lang="en" xmltv_id="MTVHits.ex" site_id="mtv-hits">MTV Hits</channel>
+  <channel site="neo.io" lang="ba" xmltv_id="OTVValentino.ba" site_id="otv-valentino">OTV Valentino</channel>
+  <channel site="neo.io" lang="ba" xmltv_id="AlJazeeraBalkans.ba" site_id="al-jazeera-balkans">Al Jazeera Balkans</channel>
+  <channel site="neo.io" lang="sl" xmltv_id="IDXtra.si" site_id="discovery-id-xtra">Discovery Xtra</channel>
+  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="M1Film.hr" site_id="276790824378">M1 Film</channel>
+  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="M1Gold.hr" site_id="276782632042">M1 Gold</channel>
+  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="Balkanika.ex" site_id="338256424367">Balkanika</channel>
+  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="OsjeckaTV.hr" site_id="338261544447">Osjecka TV</channel>
+  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="ZdravaTV.hr" site_id="343758888241">Zdrava TV</channel>
+  <channel site="tv-spored.siol.net" lang="sl" xmltv_id="DrFit.si" site_id="drfit">Dr Fit</channel>
+  <channel site="tv-spored.siol.net" lang="sl" xmltv_id="Woman.si" site_id="woman">Woman</channel>
+  <channel site="tv-spored.siol.net" lang="sl" xmltv_id="PlanetEarth.si" site_id="planetearthsd">Planet Earth</channel>
+  <channel site="mts.rs" lang="bs" xmltv_id="FoodNetwork.rs" site_id="food_network_hd">Food Network</channel>
 </channels>
