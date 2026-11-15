@@ -249,3 +249,26 @@ Viasat.History..rs
 Viasat.Kino.rs
 Viasat.Nature.HD.(RS).rs
 Z1.hr
+Filmbox+ emotion.rs
+Filmbox+ loveAndcrime.rs
+ARENAM1PREMIUM.mk
+ARENAM2PREMIUM.mk
+ARENAM3PREMIUM.mk
+FOODNETWORK.mk
+HGTV.mk
+PLANETATV.mk
+ToxicFolk.mk
+ToxicRap.mk
+Alfa.mk
+Kanal5.mk
+MRT1.mk
+MRT2.mk
+MRT3.mk
+MRT4.mk
+MRT5.mk
+NashaTV.mk
+Sitel.mk
+Telma.mk
+TV24.mk
+HYPE2.mk
+AljazeeraBalkans.mk

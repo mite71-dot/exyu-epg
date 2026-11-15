@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="neo.io" lang="mk" xmltv_id="MRT1.mk" site_id="mtv-1">MRT 1</channel>
-  <channel site="neo.io" lang="mk" xmltv_id="MRT2.mk" site_id="mtv-2">MRT 2</channel>
-  <channel site="neo.io" lang="mk" xmltv_id="MRT3.mk" site_id="mtv-3">MRT 3</channel>
-  <channel site="neo.io" lang="mk" xmltv_id="Sitel.mk" site_id="tv-sitel">Sitel</channel>
-  <channel site="neo.io" lang="mk" xmltv_id="NasaTV.mk" site_id="nasa-tv">Nasa TV</channel>
-  <channel site="neo.io" lang="mk" xmltv_id="TVSonce.mk" site_id="sonce-tv">TV Sonce</channel>
-  <channel site="tv-spored.siol.net" lang="sl" xmltv_id="TVSonce2.mk" site_id="soncetv">TV Sonce</channel>
   <channel site="neo.io" lang="en" xmltv_id="MTVHits.ex" site_id="mtv-hits">MTV Hits</channel>
   <channel site="neo.io" lang="ba" xmltv_id="OTVValentino.ba" site_id="otv-valentino">OTV Valentino</channel>
   <channel site="neo.io" lang="ba" xmltv_id="AlJazeeraBalkans.ba" site_id="al-jazeera-balkans">Al Jazeera Balkans</channel>

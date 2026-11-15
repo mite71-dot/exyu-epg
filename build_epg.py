@@ -7,6 +7,8 @@ SOURCES = [
     "https://epgshare01.online/epgshare01/epg_ripper_HR1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_BA1.xml.gz",
     "https://epgshare01.online/epgshare01/epg_ripper_SPORTKLUB1.xml.gz",
+    "https://www.open-epg.com/files/macedonia.xml",
+    "https://www.open-epg.com/files/serbia1.xml",
 ]
 wanted = {l.strip() for l in open("channels.txt", encoding="utf-8") if l.strip()}
 root = ET.Element("tv", {"generator-info-name": "exyu-epg"})
@@ -28,7 +30,9 @@ for url in SOURCES:
     try:
         req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         data = urllib.request.urlopen(req, timeout=180).read()
-        print(url, "programmes:", take(io.BytesIO(gzip.decompress(data))))
+        if data[:2] == b'\x1f\x8b':
+            data = gzip.decompress(data)
+        print(url, "programmes:", take(io.BytesIO(data)))
     except Exception as e:
         print("FAILED", url, e, file=sys.stderr)
 
