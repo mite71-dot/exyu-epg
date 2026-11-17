@@ -36,7 +36,11 @@ EXTRA_FILES = ["mk.xml"]  # local grabs (iptv-org)
 wanted = {l.strip() for l in open("channels.txt", encoding="utf-8") if l.strip()}
 cutoff = (datetime.now(timezone.utc) - timedelta(hours=12)).strftime("%Y%m%d%H%M%S")
 
-def norm(name):
+def norm(name, cid=""):
+    m = re.search(r"\.(rs|hr|ba|mk|me|si)$", cid or name)
+    return (m.group(1) if m else "") + ":" + _norm(name)
+
+def _norm(name):
     s = unicodedata.normalize("NFD", name.lower())
     s = "".join(c for c in s if unicodedata.category(c) != "Mn").replace("đ", "dj")
     s = re.sub(r"\.(rs|hr|ba|mk|me|si|ex)$", "", s)
@@ -93,13 +97,13 @@ for f in EXTRA_FILES:
 keep, taken = [], set()
 for cid in sorted(wanted):
     if cid in chans:
-        keep.append(cid); taken.add(norm(chans[cid]["name"])); taken.add(norm(cid))
+        keep.append(cid); taken.add(norm(chans[cid]["name"], cid)); taken.add(norm(cid, cid))
 best = {}
 for cid, c in chans.items():
     if cid in wanted:
         continue
-    k = norm(c["name"]) or norm(cid)
-    if not k or k in taken:
+    k = norm(c["name"], cid)
+    if k.endswith(":") or k in taken:
         continue
     if k not in best or len(c["progs"]) > len(chans[best[k]]["progs"]):
         best[k] = cid
